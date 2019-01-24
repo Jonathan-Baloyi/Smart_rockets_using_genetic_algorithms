@@ -95,8 +95,8 @@ public class RocketPopulation extends JPanel implements MouseListener
      
      //it draws the TheTarget
      g.setColor(Color.red);
-     g.fillOval((int)TheTarget.X_pos, (int)TheTarget.Y_pos, 20, 18);
-     g.drawString("Target", (int)TheTarget.X_pos,(int) TheTarget.Y_pos);
+     g.fillOval((int)TheTarget.X_pos-10, (int)TheTarget.Y_pos, 30, 30);
+     g.drawString("Target", (int)TheTarget.X_pos - 10,(int) TheTarget.Y_pos);
      
      //Draws the rockets in the panel
      g.setColor(Color.YELLOW);
