@@ -30,7 +30,7 @@ import javax.swing.event.*;
 
 public class MainWindow extends JFrame implements ActionListener {
     
-  String space=" ";
+  String SPACE=" ";
   double mutationRate = 0.01;
   int inntial_Population_of_rockets = 1000;
   
@@ -40,16 +40,14 @@ public class MainWindow extends JFrame implements ActionListener {
   JButton exit_button;
 
   public MainWindow() {
-    
-  
-    setTitle("Differential evolution : smart rockets : Optimisation Project");
-    setSize(640, 700);
+    setTitle("smart rockets");
+    setSize(420, 640);
     setVisible(true);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     start_button = new JButton("START");
     start_button.addActionListener(this);
     
-    exit_button=new JButton(space+"Exit"+space);
+    exit_button=new JButton(SPACE+"Exit"+SPACE);
     
     exit_button.addActionListener(new ActionListener() {
 
@@ -69,6 +67,7 @@ public class MainWindow extends JFrame implements ActionListener {
     add(population);
     add(start_button);
     add(exit_button);
+    pack();
   }
 
   //Action performed for the start button
